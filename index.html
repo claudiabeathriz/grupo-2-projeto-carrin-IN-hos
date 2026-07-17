@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Carrin'Hos</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+
+  <body>
+    <!-- HEADER GLOBAL (Baseado na Imagem 1) -->
+    <header>
+      <a href="./index.html" class="logo">
+        <!-- Ícone simulado por um elemento interno para estilização idêntica -->
+        <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Início</a></li>
+          <li><a href="./catalogo.html">Catálogo</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="./catalogo.html" class="btn-primary header-btn">
+        <span>☁️</span> Explorar
+      </a>
+    </header>
+
+    <main>
+      <!-- HERO SECTION (Baseado na Imagem 1) -->
+      <section class="hero">
+        <div class="hero-content">
+          <span class="hero-tag"> ▶ A locadora do universo fictício </span>
+
+          <h1>
+            DIRIJA OS <span class="highlight">VEÍCULOS</span> MAIS FAMOSOS
+          </h1>
+
+          <p>
+            Alugue carros lendários de filmes, séries e desenhos animados. Uma
+            experiência cinematográfica real.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="./catalogo.html" class="btn-primary">
+              Explorar Veículos &rarr;
+            </a>
+
+            <a href="./sobre.html" class="btn-secondary"> Saiba Mais </a>
+          </div>
+        </div>
+
+        <!-- Área direita do Hero estruturada para os 4 mini-cards das imagens -->
+        <div class="hero-images">
+          <div id="hero-cards">
+            <!-- Caso o JS falhe ou demore, estes cards estáticos mantêm o layout idêntico à Imagem 1 -->
+            <div class="hero-mini-card">
+              <img src="./assets/images/aston.jpg" alt="Aston Martin" />
+              <div class="info">
+                <h4>Aston Martin DB5</h4>
+                <span class="status status-disp">&bull; Disponível</span>
+              </div>
+            </div>
+            <div class="hero-mini-card">
+              <img src="./assets/images/batmovel.jpg" alt="Batóvel" />
+              <div class="info">
+                <h4>Batmóvel</h4>
+                <span class="status status-indisp">&bull; Indisponível</span>
+              </div>
+            </div>
+            <div class="hero-mini-card">
+              <img src="./assets/images/herbie.jpg" alt="Herbie" />
+              <div class="info">
+                <h4>Herbie</h4>
+                <span class="status status-disp">&bull; Disponível</span>
+              </div>
+            </div>
+            <div class="hero-mini-card">
+              <img src="./assets/images/delorean.jpg" alt="DeLorean" />
+              <div class="info">
+                <h4>DeLorean DMC-12</h4>
+                <span class="status status-indisp">&bull; Indisponível</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFÍCIOS SECTION (Baseado no topo da Imagem 2) -->
+      <section class="beneficios">
+        <article>
+          <div class="benefit-icon">🏅</div>
+          <h3>Veículos Exclusivos</h3>
+          <p>Acervo único no mundo.</p>
+        </article>
+
+        <article>
+          <div class="benefit-icon">📅</div>
+          <h3>Reserva Online</h3>
+          <p>Simples e em minutos.</p>
+        </article>
+
+        <article>
+          <div class="benefit-icon">▶</div>
+          <h3>Exp. Cinematográfica</h3>
+          <p>Viva a ficção.</p>
+        </article>
+
+        <article>
+          <div class="benefit-icon">⚡</div>
+          <h3>Entrega Personalizada</h3>
+          <p>No seu endereço.</p>
+        </article>
+      </section>
+
+      <!-- DESTAQUES SECTION (Baseado na Imagem 2) -->
+      <section class="destaques">
+        <div class="section-title">
+          <div>
+            <span class="subtitle-badge">DESTAQUES</span>
+            <h2>Veículos em Destaque</h2>
+          </div>
+
+          <a href="./catalogo.html" class="view-all"> Ver todos &rsaquo; </a>
+        </div>
+
+        <div id="lista-destaques">
+          <!-- O JavaScript irá espelhar ou renderizar dinamicamente os cards de veículos aqui dentro -->
+        </div>
+      </section>
+
+      <!-- SOBRE HOME SECTION -->
+      <section class="sobre-home">
+        <h2>Viva a experiência de dirigir veículos lendários.</h2>
+
+        <p>
+          Nossa plataforma reúne carros famosos da cultura pop para proporcionar
+          experiências únicas através de um sistema simples e intuitivo de
+          reservas.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER GLOBAL (Baseado na Imagem 3) -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+          </a>
+          <p>
+            A única plataforma de aluguel de veículos icônicos do entretenimento
+            mundial.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+            <a href="#" class="social-icon">TK</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="./catalogo.html">Catálogo</a></li>
+            <li><a href="#">Minhas Reservas</a></li>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Preços</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="./sobre.html">Sobre Nós</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Parceiros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul class="footer-contact-info">
+            <li><span>📞</span> +55 (11) 3456-7890</li>
+            <li><span>✉️</span> oi@carrinhos.com.br</li>
+            <li>
+              <span>📍</span> Av. Cinematográfica, 1985<br />Vila Ficção — São
+              Paulo, SP
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Carr(In)hos — Todos os direitos reservados.</p>
+        <p>Projeto educacional - Veículos fictícios</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/home.js"></script>
+  </body>
+</html>
