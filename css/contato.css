@@ -1,0 +1,140 @@
+main{
+    padding: 1rem 4rem;
+    padding-bottom: 8rem;
+}
+
+#azul{
+    color: var(--cor-primaria)
+}
+
+main h2{
+    color:  var(--cor-titulo);
+    font-family: var(--font-titulos);
+    font-weight: 400;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    background-color: var(--bg-card);
+    border: 2px solid var(--cor-primaria-hover);
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    height: 100%;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+form input{
+    color: var(--cor-titulo);
+    border: 2px solid var(--cor-primaria-hover);
+    background-color: var(--bg-card-hover);
+    border-radius: 1rem;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.formNomeEmail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.formNomeEmail > div{
+    width: 100%;
+}
+
+.formNomeEmail input{
+    width: 100%;
+}
+
+.formNomeEmail > div{
+    display: flex;
+    flex-direction: column;
+}
+form textarea{
+    color: var(--cor-titulo);
+    border: 2px solid var(--cor-primaria-hover);
+    background-color: var(--bg-card-hover);
+    border-radius: 1rem;
+    resize: none;
+    height: 7rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+form input::placeholder, textarea::placeholder{
+    color: var(--cor-titulo);
+    font-family: var(--font-corpo);
+}
+form button{
+    height: 3.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    font-family: var(--font-titulos);
+    font-size: 1.8rem;
+}
+
+form button:hover{
+    background-color: var(--cor-primaria-hover);
+    transition: 0.3s;
+}
+
+
+.informacoesContato{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 2rem;
+}
+
+.cardsInformacoes{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-card);
+    border: 2px solid var(--cor-primaria-hover);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    gap: 1rem;
+}
+
+.imagemInformacoes{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--cor-primaria-hover);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.branco{
+    color: var(--cor-titulo);
+}
+
+iframe{
+    height: 16rem;
+    border: 3px solid var(--cor-primaria-hover);
+    border-radius: 1rem;
+}
