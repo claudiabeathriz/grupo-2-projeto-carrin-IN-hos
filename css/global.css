@@ -12,9 +12,9 @@
   --bg-principal: #050b14;
   --bg-card: #0c1524;
   --bg-card-hover: #131f33;
-  --cor-primaria: #2563eb;
-  --cor-primaria-hover: #1d4ed8;
-  --cor-texto: #94a3b8;
+  --cor-primaria: #2563EB;
+  --cor-primaria-hover: #2564eb3d;
+  --cor-texto: #64748B;
   --cor-titulo: #ffffff;
   --cor-tag: #1e293b;
   --cor-disponivel: #10b981;
@@ -24,6 +24,9 @@
   --font-corpo: "Plus Jakarta Sans", sans-serif;
 }
 
+button{
+  cursor: pointer;
+}
 body {
   background-color: var(--bg-principal);
   color: var(--cor-texto);
@@ -40,7 +43,6 @@ a {
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 .btn-primary {
@@ -78,145 +80,183 @@ img {
   transform: translateY(-2px);
 }
 
-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* Header */
+
+header{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 1rem 4rem;
   align-items: center;
+  border-bottom: 2px solid var(--cor-primaria-hover);
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--cor-titulo);
+header > div{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: 1rem;
+  color: var(--cor-titulo)
 }
 
-.logo span {
+header button{
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  border: none;
+  border-radius: 1rem;
+  color: var(--cor-titulo);
+  padding-top: 0.2rem;
+}
+
+#botaoCatalogoHeader{
+  width: 8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: var(--font-titulos);
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-top: 0;
+}
+
+#botaoCatalogoHeader img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+header button:hover{
+  background-color: var(--cor-primaria-hover);
+  transition: 0.3s;
+}
+.tituloHeader h1{
+  font-family: var(--font-titulos);
+  font-weight: 400;
+}
+
+.tituloHeader span{
   color: var(--cor-primaria);
 }
 
-header nav ul {
+.linksHeader{
   display: flex;
-  list-style: none;
-  gap: 32px;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-header nav a {
-  color: var(--cor-texto);
+.linksHeader a{
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   font-weight: 500;
-  font-size: 0.95rem;
 }
 
-header nav a:hover,
-header nav a.active {
+.linksHeader a:hover{
+  background-color: #64748b1a;
   color: var(--cor-titulo);
+  transition: 0.3s;
+}
+.linkAtivo{
+  background-color: var(--cor-primaria-hover);
+  color: var(--cor-primaria);
 }
 
-footer {
-  background-color: #03070d;
-  padding: 60px 20px 20px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 80px;
-}
+/* Footer */
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
-  gap: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-brand p {
-  margin: 16px 0 24px 0;
-  font-size: 0.9rem;
-  max-width: 260px;
-}
-
-.footer-socials {
-  display: flex;
-  gap: 12px;
-}
-
-.social-icon {
-  width: 36px;
-  height: 36px;
-  background-color: var(--bg-card);
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--cor-texto);
-}
-
-.social-icon:hover {
-  background-color: var(--cor-primaria);
-  color: var(--cor-titulo);
-}
-
-.footer-links h4 {
-  color: var(--cor-titulo);
-  font-family: var(--font-corpo);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-.footer-links ul {
-  list-style: none;
+footer{
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  padding: 4rem 4rem;
+  background-color: var(--bg-card);
+  border-top: 2px solid var(--cor-primaria-hover);
+  gap: 3rem;
 }
 
-.footer-links a {
-  font-size: 0.9rem;
-  color: var(--cor-texto);
-}
-
-.footer-links a:hover {
-  color: var(--cor-titulo);
-  padding-left: 4px;
-}
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 20px auto 0 auto;
+.footerPrincipal{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.3);
 }
 
-
-.blue-color {
-    color: var(--cor-primaria);
+.footerPrincipal > div, .linksPlataforma, .linksEmpresa{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.emphasis-stronger {
-    font-family: var(--font-titulos);
-    font-size: 2.5rem;
-    font-weight: 900;
-    letter-spacing: -0.5px;
-    text-transform: uppercase;
-    color: #ffffff;
+.footerSobre{
+  width: 15%;
 }
 
-
-.emphasis-weak {
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    color: var(--cor-texto);
+.tituloFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: var(--cor-titulo);
+  font-family: var(--font-titulos);
+  font-weight: 400;
 }
 
+.tituloFooter button{
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--cor-primaria);
+  border: none;
+  color: var(--cor-titulo);
+  border-radius: 12px;
+  padding-top: 0.2rem;
+}
+
+.tituloFooter button img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tituloFooter span{
+  color: var(--cor-primaria);
+}
+
+footer h5{
+  font-family: var(--font-titulos);
+  font-weight: 400;
+}
+
+.linksSocial{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.linksSocial button{
+  width: 3rem;
+  height: 3rem;
+  color: (var(--cor-texto));
+  background-color: var(--bg-card-hover);
+  border: 2px solid var(--cor-primaria-hover);
+  border-radius: 12px;
+}
+
+.footerContato{
+  width: 15%;
+}
+
+.cardContato{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cardContato img{
+  height: 1rem;
+  width: 1rem;
+}
+.footerCreditos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid var(--cor-primaria-hover);
+  padding-top: 2rem;
+}
