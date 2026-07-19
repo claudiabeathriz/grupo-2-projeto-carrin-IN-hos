@@ -12,10 +12,11 @@
 
   <body>
     <header>
-      <div>
-        <div class="tituloHeader">
-          <h1>🚗 Carr<span>{In}</span>hos</h1>
-        </div>
+      <div class="tituloHeader">
+        <a href="./catalogo.html"
+          ><button><img src="./assets/iconeCarro.png" /></button
+        ></a>
+        <h1>Carr<span>{In}</span>hos</h1>
       </div>
 
       <nav class="linksHeader">
@@ -26,12 +27,13 @@
         <a href="./contato.html">Contato</a>
       </nav>
 
-      <button
-        id="botaoCatalogoHeader"
-        onclick="window.location.href = './catalogo.html'"
-      >
-        ☁️ Explorar
-      </button>
+      <div class="explorarHeader">
+        <a href="./catalogo.html"
+          ><button id="botaoCatalogoHeader">
+            <img src="./assets/iconeCarro.png" /> Explorar
+          </button></a
+        >
+      </div>
     </header>
     <main>
       <section class="hero" id="inicio">
