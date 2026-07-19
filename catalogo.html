@@ -1,125 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/catalogo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/catalogo.css" />
     <script src="js/render.js" defer></script>
-    <script src="js/catalogo.js" defer></script>
+    <script type="module" src="js/catalogo.js" defer></script>
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-      <a href="./index.html" class="logo">
-        <!-- Ícone simulado por um elemento interno para estilização idêntica -->
-        <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
-      </a>
+      <div class="tituloHeader">
+        <a href="./catalogo.html"
+          ><button><img src="./assets/iconeCarro.png" /></button
+        ></a>
+        <h1>Carr<span>{In}</span>hos</h1>
+      </div>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html" class="active">Início</a></li>
-          <li><a href="./catalogo.html">Catálogo</a></li>
-          <li><a href="./reservas.html">Reservas</a></li>
-          <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="./contato.html">Contato</a></li>
-        </ul>
+      <nav class="linksHeader">
+        <a href="./index.html" class="linkAtivo">Início</a>
+        <a href="./catalogo.html">Catálogo</a>
+        <a href="./reservas.html">Reservas</a>
+        <a href="./sobre.html">Sobre</a>
+        <a href="./contato.html">Contato</a>
       </nav>
 
-      <a href="./catalogo.html" class="btn-primary header-btn">
-        <span>☁️</span> Explorar
-      </a>
+      <div class="explorarHeader">
+        <a href="./catalogo.html"
+          ><button id="botaoCatalogoHeader">
+            <img src="./assets/iconeCarro.png" /> Explorar
+          </button></a
+        >
+      </div>
     </header>
 
     <main>
-        <hgroup>
-            <p class="blue-color">CATÁLOGO</p>
-            <h1 class="emphasis-stronger">TODOS OS VEÍCULOS</h1>
-            <p id="number-results" class="emphasis-weak"></p>
-        </hgroup>
+      <hgroup>
+        <p class="blue-color">CATÁLOGO</p>
+        <h1 class="emphasis-stronger">TODOS OS VEÍCULOS</h1>
+        <p id="number-results" class="emphasis-weak"></p>
+      </hgroup>
 
-        <section id="catalogue-page">
+      <section id="catalogue-page">
+        <nav>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar por nome ou obra..."
+          />
 
-            <nav>
+          <button class="filter-button" type="button">Todos</button>
+          <button class="filter-button" type="button">Disponivel</button>
+          <button class="filter-button" type="button">Indisponivel</button>
+          <button class="filter-button" type="button">Filme</button>
+          <button class="filter-button" type="button">Série</button>
+          <button class="filter-button" type="button">Desenho</button>
+        </nav>
 
-                <input type="text" id="search-input" placeholder="Buscar por nome ou obra...">
+        <ul id="catalogue"></ul>
 
-                <button class="filter-button" type="button">Todos</button>
-                <button class="filter-button" type="button">Disponivel</button>
-                <button class="filter-button" type="button">Indisponivel</button>
-                <button class="filter-button" type="button">Filme</button>
-                <button class="filter-button" type="button">Série</button>
-                <button class="filter-button" type="button">Desenho</button>
-    
-            </nav>
-
-            <ul id="catalogue"></ul>
-
-            <section id="page-buttons" class="pagination">
-
-            </section>
-
-        </section>
-
-        
+        <section id="page-buttons" class="pagination"></section>
+      </section>
     </main>
 
-        <footer>
-      <div class="footer-container">
-        <div class="footer-brand">
-          <a href="./index.html" class="logo">
-            <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
-          </a>
+    <footer>
+      <div class="footerPrincipal">
+        <div class="footerSobre">
+          <div class="tituloFooter">
+            <a href="./catalogo.html"
+              ><button><img src="./assets/iconeCarro.png" /></button
+            ></a>
+            <h2>Carr<span>{In}</span>hos</h2>
+          </div>
+
           <p>
             A única plataforma de aluguel de veículos icônicos do entretenimento
             mundial.
           </p>
-          <div class="footer-socials">
-            <a href="#" class="social-icon">IG</a>
-            <a href="#" class="social-icon">TW</a>
-            <a href="#" class="social-icon">YT</a>
-            <a href="#" class="social-icon">TK</a>
+
+          <div class="linksSocial">
+            <button>IG</button>
+            <button>TW</button>
+            <button>YT</button>
+            <button>TK</button>
           </div>
         </div>
 
-        <div class="footer-links">
-          <h4>Plataforma</h4>
-          <ul>
-            <li><a href="./catalogo.html">Catálogo</a></li>
-            <li><a href="#">Minhas Reservas</a></li>
-            <li><a href="#">Como Funciona</a></li>
-            <li><a href="#">Preços</a></li>
-          </ul>
+        <div class="linksPlataforma">
+          <h5>Plataforma</h5>
+
+          <a href="./catalogo.html">Catálogo</a>
+          <a href="#">Minhas Reservas</a>
+          <a href="#">Como Funciona</a>
+          <a href="#">Preços</a>
         </div>
 
-        <div class="footer-links">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a href="./sobre.html">Sobre Nós</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Parceiros</a></li>
-          </ul>
+        <div class="linksEmpresa">
+          <h5>Empresa</h5>
+
+          <a href="./sobre.html">Sobre Nós</a>
+          <a href="./contato.html">Contato</a>
+          <a href="#">Blog</a>
+          <a href="#">Parceiros</a>
         </div>
 
-        <div class="footer-links">
-          <h4>Contato</h4>
-          <ul class="footer-contact-info">
-            <li><span>📞</span> +55 (11) 3456-7890</li>
-            <li><span>✉️</span> oi@carrinhos.com.br</li>
-            <li>
-              <span>📍</span> Av. Cinematográfica, 1985<br />Vila Ficção — São
-              Paulo, SP
-            </li>
-          </ul>
+        <div class="footerContato">
+          <h5>Contato</h5>
+
+          <div class="cardContato">
+            <span>📞</span>
+            <p>+55 (11) 3456-7890</p>
+          </div>
+
+          <div class="cardContato">
+            <span>✉️</span>
+            <p>oi@carrinhos.com.br</p>
+          </div>
+
+          <div class="cardContato">
+            <span>📍</span>
+
+            <p>
+              Av. Cinematográfica, 1985<br />
+              Vila Ficção — São Paulo, SP
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footerCreditos">
         <p>&copy; 2026 Carr(In)hos — Todos os direitos reservados.</p>
         <p>Projeto educacional - Veículos fictícios</p>
       </div>
     </footer>
-
-</body>
+  </body>
 </html>

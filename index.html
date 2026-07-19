@@ -11,31 +11,32 @@
   </head>
 
   <body>
-    <!-- HEADER GLOBAL (Baseado na Imagem 1) -->
     <header>
-      <a href="./index.html" class="logo">
-        <!-- Ícone simulado por um elemento interno para estilização idêntica -->
-        <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
-      </a>
+      <div class="tituloHeader">
+        <a href="./catalogo.html"
+          ><button><img src="./assets/iconeCarro.png" /></button
+        ></a>
+        <h1>Carr<span>{In}</span>hos</h1>
+      </div>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html" class="active">Início</a></li>
-          <li><a href="./catalogo.html">Catálogo</a></li>
-          <li><a href="./reservas.html">Reservas</a></li>
-          <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="./contato.html">Contato</a></li>
-        </ul>
+      <nav class="linksHeader">
+        <a href="./index.html" class="linkAtivo">Início</a>
+        <a href="./catalogo.html">Catálogo</a>
+        <a href="./reservas.html">Reservas</a>
+        <a href="./sobre.html">Sobre</a>
+        <a href="./contato.html">Contato</a>
       </nav>
 
-      <a href="./catalogo.html" class="btn-primary header-btn">
-        <span>☁️</span> Explorar
-      </a>
+      <div class="explorarHeader">
+        <a href="./catalogo.html"
+          ><button id="botaoCatalogoHeader">
+            <img src="./assets/iconeCarro.png" /> Explorar
+          </button></a
+        >
+      </div>
     </header>
-
     <main>
-      <!-- HERO SECTION (Baseado na Imagem 1) -->
-      <section class="hero">
+      <section class="hero" id="inicio">
         <div class="hero-content">
           <span class="hero-tag"> ▶ A locadora do universo fictício </span>
 
@@ -57,44 +58,14 @@
           </div>
         </div>
 
-        <!-- Área direita do Hero estruturada para os 4 mini-cards das imagens -->
         <div class="hero-images">
-          <div id="hero-cards">
-            <!-- Caso o JS falhe ou demore, estes cards estáticos mantêm o layout idêntico à Imagem 1 -->
-            <div class="hero-mini-card">
-              <img src="./assets/images/aston.jpg" alt="Aston Martin" />
-              <div class="info">
-                <h4>Aston Martin DB5</h4>
-                <span class="status status-disp">&bull; Disponível</span>
-              </div>
-            </div>
-            <div class="hero-mini-card">
-              <img src="./assets/images/batmovel.jpg" alt="Batóvel" />
-              <div class="info">
-                <h4>Batmóvel</h4>
-                <span class="status status-indisp">&bull; Indisponível</span>
-              </div>
-            </div>
-            <div class="hero-mini-card">
-              <img src="./assets/images/herbie.jpg" alt="Herbie" />
-              <div class="info">
-                <h4>Herbie</h4>
-                <span class="status status-disp">&bull; Disponível</span>
-              </div>
-            </div>
-            <div class="hero-mini-card">
-              <img src="./assets/images/delorean.jpg" alt="DeLorean" />
-              <div class="info">
-                <h4>DeLorean DMC-12</h4>
-                <span class="status status-indisp">&bull; Indisponível</span>
-              </div>
-            </div>
+          <div id="hero-cards" class="hero-cards" aria-live="polite">
+            <p class="home__loading">Carregando veículos...</p>
           </div>
         </div>
       </section>
 
-      <!-- BENEFÍCIOS SECTION (Baseado no topo da Imagem 2) -->
-      <section class="beneficios">
+      <section class="beneficios" id="beneficios">
         <article>
           <div class="benefit-icon">🏅</div>
           <h3>Veículos Exclusivos</h3>
@@ -109,7 +80,7 @@
 
         <article>
           <div class="benefit-icon">▶</div>
-          <h3>Exp. Cinematográfica</h3>
+          <h3>Experiência Cinematográfica</h3>
           <p>Viva a ficção.</p>
         </article>
 
@@ -120,8 +91,7 @@
         </article>
       </section>
 
-      <!-- DESTAQUES SECTION (Baseado na Imagem 2) -->
-      <section class="destaques">
+      <section class="destaques" id="destaques">
         <div class="section-title">
           <div>
             <span class="subtitle-badge">DESTAQUES</span>
@@ -131,13 +101,11 @@
           <a href="./catalogo.html" class="view-all"> Ver todos &rsaquo; </a>
         </div>
 
-        <div id="lista-destaques">
-          <!-- O JavaScript irá espelhar ou renderizar dinamicamente os cards de veículos aqui dentro -->
+        <div id="lista-destaques" class="vehicle-grid" aria-live="polite">
+          <p class="home__loading">Carregando veículos...</p>
         </div>
       </section>
-
-      <!-- SOBRE HOME SECTION -->
-      <section class="sobre-home">
+      <section class="sobre-home" id="sobre">
         <h2>Viva a experiência de dirigir veículos lendários.</h2>
 
         <p>
@@ -148,59 +116,72 @@
       </section>
     </main>
 
-    <!-- FOOTER GLOBAL (Baseado na Imagem 3) -->
     <footer>
-      <div class="footer-container">
-        <div class="footer-brand">
-          <a href="./index.html" class="logo">
-            <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
-          </a>
+      <div class="footerPrincipal">
+        <div class="footerSobre">
+          <div class="tituloFooter">
+            <a href="./catalogo.html"
+              ><button><img src="./assets/iconeCarro.png" /></button
+            ></a>
+            <h2>Carr<span>{In}</span>hos</h2>
+          </div>
+
           <p>
             A única plataforma de aluguel de veículos icônicos do entretenimento
             mundial.
           </p>
-          <div class="footer-socials">
-            <a href="#" class="social-icon">IG</a>
-            <a href="#" class="social-icon">TW</a>
-            <a href="#" class="social-icon">YT</a>
-            <a href="#" class="social-icon">TK</a>
+
+          <div class="linksSocial">
+            <button>IG</button>
+            <button>TW</button>
+            <button>YT</button>
+            <button>TK</button>
           </div>
         </div>
 
-        <div class="footer-links">
-          <h4>Plataforma</h4>
-          <ul>
-            <li><a href="./catalogo.html">Catálogo</a></li>
-            <li><a href="#">Minhas Reservas</a></li>
-            <li><a href="#">Como Funciona</a></li>
-            <li><a href="#">Preços</a></li>
-          </ul>
+        <div class="linksPlataforma">
+          <h5>Plataforma</h5>
+
+          <a href="./catalogo.html">Catálogo</a>
+          <a href="#">Minhas Reservas</a>
+          <a href="#">Como Funciona</a>
+          <a href="#">Preços</a>
         </div>
 
-        <div class="footer-links">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a href="./sobre.html">Sobre Nós</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Parceiros</a></li>
-          </ul>
+        <div class="linksEmpresa">
+          <h5>Empresa</h5>
+
+          <a href="./sobre.html">Sobre Nós</a>
+          <a href="./contato.html">Contato</a>
+          <a href="#">Blog</a>
+          <a href="#">Parceiros</a>
         </div>
 
-        <div class="footer-links">
-          <h4>Contato</h4>
-          <ul class="footer-contact-info">
-            <li><span>📞</span> +55 (11) 3456-7890</li>
-            <li><span>✉️</span> oi@carrinhos.com.br</li>
-            <li>
-              <span>📍</span> Av. Cinematográfica, 1985<br />Vila Ficção — São
-              Paulo, SP
-            </li>
-          </ul>
+        <div class="footerContato">
+          <h5>Contato</h5>
+
+          <div class="cardContato">
+            <span>📞</span>
+            <p>+55 (11) 3456-7890</p>
+          </div>
+
+          <div class="cardContato">
+            <span>✉️</span>
+            <p>oi@carrinhos.com.br</p>
+          </div>
+
+          <div class="cardContato">
+            <span>📍</span>
+
+            <p>
+              Av. Cinematográfica, 1985<br />
+              Vila Ficção — São Paulo, SP
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footerCreditos">
         <p>&copy; 2026 Carr(In)hos — Todos os direitos reservados.</p>
         <p>Projeto educacional - Veículos fictícios</p>
       </div>
