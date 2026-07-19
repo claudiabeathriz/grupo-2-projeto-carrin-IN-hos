@@ -189,3 +189,7 @@ hgroup .blue-color {
     font-weight: 800;
     color: var(--cor-titulo);
 }
+
+.dummy-grid-field > input.blue-color {
+    color: var(--cor-primaria);
+}
