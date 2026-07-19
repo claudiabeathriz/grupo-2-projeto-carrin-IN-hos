@@ -1,0 +1,189 @@
+@import url("global.css");
+
+:root {
+    --border-card: #161f30;
+
+    --status-active-bg: rgba(16, 185, 129, 0.1);
+    --status-finished-txt: #3b82f6;
+    --status-finished-bg: rgba(59, 130, 246, 0.1);
+    --status-canceled-bg: rgba(239, 68, 68, 0.1);
+}
+
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+hgroup {
+    margin-bottom: 30px;
+}
+
+hgroup p {
+    color: var(--cor-primaria);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#reserve-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.car-img {
+    width: 120px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #1e293b;
+}
+
+.reserve-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reserve-card-content > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.car-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.car-activity {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.car-activity.ativa {
+    color: var(--cor-disponivel);
+    background-color: var(--status-active-bg);
+}
+
+.car-activity.finalizada {
+    color: var(--status-finished-txt);
+    background-color: var(--status-finished-bg);
+}
+
+.car-activity.cancelada {
+    color: var(--cor-indisponivel);
+    background-color: var(--status-canceled-bg);
+}
+
+.reserve-card-meta {
+    color: var(--cor-texto);
+    font-size: 0.85rem;
+}
+
+.car-price {
+    color: var(--cor-texto);
+    font-weight: normal;
+}
+
+.car-dates {
+    color: var(--cor-texto);
+    font-size: 0.85rem;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-details {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: filter 0.2s;
+}
+
+.btn-details:hover {
+    filter: brightness(1.2);
+}
+
+.card-actions button {
+    background-color: var(--status-canceled-bg);
+    color: var(--cor-indisponivel);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.card-actions button:hover {
+    background-color: rgba(239, 68, 68, 0.2);
+}
+
+section:last-of-type {
+    border: 2px dashed #162235;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+section:last-of-type img {
+    opacity: 0.4;
+    max-width: 40px;
+}
+
+section:last-of-type p {
+    color: var(--cor-texto);
+    font-size: 1rem;
+}
+
+section:last-of-type button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+section:last-of-type button:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+section:last-of-type button:active {
+    transform: scale(0.98);
+}

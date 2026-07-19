@@ -197,3 +197,26 @@ footer {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.3);
 }
+
+
+.blue-color {
+    color: var(--cor-primaria);
+}
+
+.emphasis-stronger {
+    font-family: var(--font-titulos);
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+.emphasis-weak {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--cor-texto);
+}
+

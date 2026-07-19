@@ -1,0 +1,308 @@
+@import url("global.css");
+
+:root {
+    --cor-desabilitado: #475569;
+    --cor-tag-azul: #93c5fd;
+}
+
+
+.blue-color {
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+header {
+  max-width: 1200px;
+  width: 100%;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--cor-titulo);
+}
+
+main {
+    padding: 40px 8%;
+}
+
+hgroup {
+    margin-bottom: 30px;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+#catalogue-page > nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#search-input {
+    background-color: var(--bg-card);
+    border: 1px solid var(--cor-tag);
+    border-radius: 6px;
+    color: var(--cor-titulo);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    width: 320px;
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: var(--cor-desabilitado);
+}
+
+.filter-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    background-color: var(--bg-card);
+    border: 1px solid var(--cor-tag);
+    color: var(--cor-texto);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+    background-color: var(--bg-card-hover);
+    color: var(--cor-titulo);
+}
+
+.filter-button.active {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+}
+
+#catalogue {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.card-catalogo {
+    background-color: var(--bg-card);
+    border: 1px solid var(--cor-tag);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-catalogo:hover {
+    background-color: var(--bg-card-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background-color: var(--bg-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.tag-tipo, .tag-status {
+    position: absolute;
+    top: 12px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.tag-tipo {
+    left: 12px;
+    background-color: rgba(15, 23, 42, 0.75);
+    color: var(--cor-tag-azul);
+    border: 1px solid rgba(147, 197, 253, 0.3);
+}
+
+.tag-status {
+    right: 12px;
+}
+
+.tag-status.disponivel {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: var(--cor-disponivel);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.tag-status.alugado {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: var(--cor-indisponivel);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.tag-status.manutencao {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.card-catalogo h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-titulo);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-catalogo .obra {
+    font-size: 0.85rem;
+    color: var(--cor-texto);
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-catalogo .meta-preco {
+    font-size: 0.75rem;
+    color: var(--cor-desabilitado);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.card-catalogo .preco {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    margin-bottom: 16px;
+}
+
+.card-footer {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.btn-alugar {
+    flex: 1;
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-alugar:hover:not(:disabled) {
+    background-color: var(--cor-primaria-hover);
+}
+
+.btn-alugar:disabled {
+    background-color: var(--cor-tag);
+    color: var(--cor-desabilitado);
+    cursor: not-allowed;
+}
+
+.btn-agenda {
+    background-color: #0e131f;
+    color: var(--cor-primaria-hover);
+    border: 1px solid var(--cor-primaria-hover);
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-agenda:hover {
+    background-color: var(--cor-tag);
+    border-color: var(--cor-texto);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.page-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--cor-primaria-hover);
+    color: var(--cor-tag-azul);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.page-btn.active {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+
+.page-btn.arrow {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+}
+
+.page-btn:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    transform: translateY(-2px);
+}
+
+.page-btn:disabled {
+    background-color: var(--bg-card);
+    color: var(--cor-desabilitado);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.hidden {
+    display: none;
+}
