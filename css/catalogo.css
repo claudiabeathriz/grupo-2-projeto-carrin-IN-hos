@@ -302,3 +302,7 @@ li {
     box-shadow: none;
     transform: none;
 }
+
+.hidden {
+    display: none;
+}
