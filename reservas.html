@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reservas.css">
+    <title>Reservas</title>
+</head>
+<body>
+    
+    <header>
+      <a href="./index.html" class="logo">
+        <!-- Ícone simulado por um elemento interno para estilização idêntica -->
+        <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Início</a></li>
+          <li><a href="./catalogo.html">Catálogo</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="./catalogo.html" class="btn-primary header-btn">
+        <span>☁️</span> Explorar
+      </a>
+    </header>
+
+    <main>
+        <hgroup>
+            <p class="blue-color">HISTÓRICO</p>
+            <h1 class="emphasis-stronger">MINHAS RESERVAS</h1>
+        </hgroup>
+
+        <!--example li - criado em runtime:
+
+            <li class="info-card">
+                <img class="car-img"></img>
+
+                <div class="reserve-card-content">
+                    <div>
+                        <h2 class="car-name"></h2>
+                        <span class="car-activity"></span>
+                    </div>
+
+                    <p class="reserve-card-meta">
+                        <span class="car-id"></span> • 
+                        <span class="car-days"></span> • 
+                        <strong class="car-price"></strong> • 
+                        <span class="car-location"></span>
+                    </p>
+                    <p class="car-dates"></p>
+                </div>
+
+                <div class="card-actions">
+                    <a href="" class="btn-details">Ver Detalhes</a>
+                    <button type="button"></button>
+                </div>
+
+                </li>
+        -->
+        <section>
+            <ul id="reserve-list">
+
+            </ul>
+        </section>
+
+        <section>
+            <!--TODO: pegar fotinha de carro-->
+            <img src="" alt="">
+            <p>Quer adicionar uma nova aventura?</p>
+            <a href="catalogo.html"><button>Explorar Catálogo</button></a>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+          </a>
+          <p>
+            A única plataforma de aluguel de veículos icônicos do entretenimento
+            mundial.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+            <a href="#" class="social-icon">TK</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="./catalogo.html">Catálogo</a></li>
+            <li><a href="#">Minhas Reservas</a></li>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Preços</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="./sobre.html">Sobre Nós</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Parceiros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul class="footer-contact-info">
+            <li><span>📞</span> +55 (11) 3456-7890</li>
+            <li><span>✉️</span> oi@carrinhos.com.br</li>
+            <li>
+              <span>📍</span> Av. Cinematográfica, 1985<br />Vila Ficção — São
+              Paulo, SP
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Carr(In)hos — Todos os direitos reservados.</p>
+        <p>Projeto educacional - Veículos fictícios</p>
+      </div>
+    </footer>
+</body>
+</html>
