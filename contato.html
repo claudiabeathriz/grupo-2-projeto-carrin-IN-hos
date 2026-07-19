@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/contato.css" />
+</head>
+<body>
+    <header>
+        <div class="tituloHeader">
+            <a href="./catalogo.html"><button><img src="./assets/iconeCarro.png"></button></a>
+            <h1>Carr<span>{In}</span>hos</h1>
+        </div>
+        <nav class="linksHeader">
+            <a href="./index.html">Início</a>
+            <a href="./catalogo.html">Catálogo</a>
+            <a href="./reservas.html">Reservas</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="./contato.html" class="linkAtivo">Contato</a>
+        </nav>
+        <div class="explorarHeader">
+            <a href="./catalogo.html"><button id="botaoCatalogoHeader"><img src="./assets/iconeCarro.png"> Explorar</button></a>
+        </div>
+    </header>
+    <main>
+        <p id="azul">FALE CONOSCO</p>
+        <h2>CONTATO</h2>
+
+        <section>
+            <form>
+                <div class="formNomeEmail">
+                    <div class="formNome">
+                        <label for="nome">NOME</label>
+                        <input type="text" name="nome" placeholder="Seu Nome" required>
+                    </div>
+
+                    <div class="formEmail">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                </div>
+                    <label for="assunto">ASSUNTO</label>
+                    <input type="text" name="assunto" placeholder="Como podemos ajudar?" required>
+
+                    <label for="mensagem">MENSAGEM</label>
+                    <textarea name="mensagem" placeholder="Descreva sua dúvida ou sugestão..." required></textarea>
+
+                    <button type="submit">ENVIAR MENSAGEM</button>
+            </form>
+            <div class="informacoesContato">
+                <div class="cardsInformacoes">
+                    <div class="imagemInformacoes">
+                        <img src="./assets/iconeTelefone.png">
+                    </div>
+                    <div class="textosInformacoes">
+                        <p>TELEFONE</p>
+                        <p class="branco">+55 (11) 3456-7890</p>
+                    </div>
+                </div>
+                <div class="cardsInformacoes">
+                    <div class="imagemInformacoes">
+                        <img src="./assets/iconeEmail.png">
+                    </div>
+                    <div class="textosInformacoes">
+                        <p>E-MAIL</p>
+                        <p class="branco">oi@carrinhos.com.br</p>
+                    </div>
+                </div>
+                <div class="cardsInformacoes">
+                    <div class="imagemInformacoes">
+                        <img src="./assets/iconeEndereco.png">
+                    </div>
+                    <div class="textosInformacoes">
+                        <p>ENDEREÇO</p>
+                        <p class="branco">Av. Cinematográfica, 1985<br>Vila Ficção — São Paulo, SP<br>CEP 01310-100</p>
+                    </div>
+                </div>
+                <div class="cardsInformacoes">
+                    <div class="imagemInformacoes">
+                        <img src="./assets/iconeHorario.png">
+                    </div>
+                    <div class="textosInformacoes">
+                        <p>HORÁRIO</p>
+                        <p class="branco">Seg–Sex: 9h–19h<br>Sáb: 9h–14h<br>Dom: Fechado</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.187191423964!2d-43.13787362738638!3d-22.90646543340756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e444e692b%3A0xfd5e35fb577af2f5!2sUFF%20-%20Instituto%20de%20Computa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1753166667385!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerPrincipal">
+            <div class="footerSobre">
+                <div class="tituloFooter">
+                    <a href="./catalogo.html"><button><img src="./assets/iconeCarro.png"></button></a>
+                    <h2>Carr<span>{In}</span>hos</h2>
+                </div>
+                <p>A única plataforma de aluguel de veículos icônicos do entretenimento mundial.</p>
+                <nav class="linksSocial">
+                    <a href="" target="_blank"><button>IG</button></a>
+                    <a href="" target="_blank"><button>TW</button></a>
+                    <a href="" target="_blank"><button>YT</button></a>
+                    <a href="" target="_blank"><button>TK</button></a>
+                </nav>
+            </div>
+            <div class="footerPlataforma">
+                <h5>PLATAFORMA</h5>
+                <nav class="linksPlataforma">
+                    <a href="./catalogo.html">Catálogo</a>
+                    <a href="./reservas.html">Minhas Reservas</a>
+                    <a href="">Como Funciona</a>
+                    <a href="">Preços</a>
+                </nav>
+            </div>
+            <div class="footerEmpresa">
+                <h5>EMPRESA</h5>
+                <nav class="linksEmpresa">
+                    <a href="./sobre.html">Sobre Nós</a>
+                    <a href="./contato.html">Contato</a>
+                    <p>Blog</p>
+                    <p>Parceiros</p>
+                </nav>
+            </div>
+            <div class="footerContato">
+                <h5>CONTATO</h5>
+                <div class="cardContato"><img src="./assets/iconeTelefone.png"><p>+55 (11) 3456-7890</p></div>
+                <div class="cardContato"><img src="./assets/iconeEmail.png"><p>oi@carrinhos.com.br</p></div>
+                <div class="cardContato"><img src="./assets/iconeEndereco.png"><p>Av. Cinematográfica, 1985 <br>Vila Ficção — São Paulo, SP</p></div>
+            </div>
+        </div>
+        <div class="footerCreditos">
+            <p>© 2025 Carr{In}hos — Todos os direitos reservados.</p>
+            <p>Projeto educacional · Veículos fictícios</p>
+        </div>
+    </footer>
+</body>
+</html>
