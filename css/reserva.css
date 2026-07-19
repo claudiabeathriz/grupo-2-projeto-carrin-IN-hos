@@ -1,0 +1,191 @@
+@import url("global.css");
+
+:root {
+    --font-mono: monospace;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--cor-titulo);
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+hgroup {
+    margin-bottom: 35px;
+}
+
+hgroup .blue-color {
+    color: var(--cor-primaria);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.rental-container-main {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.blue-color.emphasis-stronger {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+.form-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--cor-tag);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.form-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-card h2 {
+    grid-column: span 2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dummy-grid-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card label {
+    display: block;
+    color: var(--cor-texto);
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.form-card input {
+    width: 100%;
+    background-color: var(--bg-principal);
+    border: 1px solid var(--cor-tag);
+    border-radius: 8px;
+    padding: 14px;
+    color: var(--cor-titulo);
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.form-container button[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.rental-container-main > .info-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rental-container-main > .info-card h2 {
+    font-family: var(--font-titulos);
+    font-size: 0.85rem;
+    color: var(--cor-texto);
+    letter-spacing: 1.5px;
+}
+
+.car-img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: var(--bg-principal);
+}
+
+.auxiliar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--cor-tag);
+    padding-bottom: 12px;
+}
+
+#dias-aluguel {
+    background: transparent;
+    border: none;
+    color: var(--cor-titulo);
+    text-align: right;
+    width: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.auxiliar-flex:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 10px;
+    color: var(--cor-titulo);
+    font-weight: bold;
+}
+
+.auxiliar-flex:last-of-type .car-value {
+    color: var(--cor-primaria);
+    font-size: 1.4rem;
+}
+
+.car-image-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.car-image-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(5, 11, 20, 0.95) 10%, rgba(0,0,0,0) 60%);
+}
+
+.car-name-overlay {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-titulo);
+}

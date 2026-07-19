@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Impact&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-principal: #050b14;
+  --bg-card: #0c1524;
+  --bg-card-hover: #131f33;
+  --cor-primaria: #2563eb;
+  --cor-primaria-hover: #1d4ed8;
+  --cor-texto: #94a3b8;
+  --cor-titulo: #ffffff;
+  --cor-tag: #1e293b;
+  --cor-disponivel: #10b981;
+  --cor-indisponivel: #ef4444;
+
+  --font-titulos: "Impact", "Arial Black", sans-serif;
+  --font-corpo: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--cor-texto);
+  font-family: var(--font-corpo);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: var(--cor-titulo);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-primaria-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--cor-titulo);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-titulo);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  color: var(--cor-primaria);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+header nav a {
+  color: var(--cor-texto);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: var(--cor-titulo);
+}
+
+footer {
+  background-color: #03070d;
+  padding: 60px 20px 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-brand p {
+  margin: 16px 0 24px 0;
+  font-size: 0.9rem;
+  max-width: 260px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.social-icon:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-titulo);
+}
+
+.footer-links h4 {
+  color: var(--cor-titulo);
+  font-family: var(--font-corpo);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+}
+
+.footer-links a:hover {
+  color: var(--cor-titulo);
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.blue-color {
+    color: var(--cor-primaria);
+}
+
+.emphasis-stronger {
+    font-family: var(--font-titulos);
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+.emphasis-weak {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--cor-texto);
+}
+

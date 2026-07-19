@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/render.js" defer></script>
+    <script src="js/reserva.js" defer></script>
+    <link rel="stylesheet" href="css/reserva.css">
+    <title>carr{IN}hos - Só mais um passo!</title>
+</head>
+<body>
+
+    <header>
+      <a href="./index.html" class="logo">
+        <!-- Ícone simulado por um elemento interno para estilização idêntica -->
+        <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Início</a></li>
+          <li><a href="./catalogo.html">Catálogo</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="./catalogo.html" class="btn-primary header-btn">
+        <span>☁️</span> Explorar
+      </a>
+    </header>
+
+    <main>
+        <hgroup>
+            <p class="blue-color">RESERVA</p>
+            <h1 class="emphasis-stronger">RESERVAR VEÍCULO</h1>
+        </hgroup>
+
+        <div class="rental-container-main">
+
+            <form action="" class="form-container">
+
+                <section class="info-card form-card">
+
+                    <h2>Dados Pessoais</h2>
+        
+                    <div class="dummy-grid-field">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="João Silva" required>
+                    </div>
+
+                    <div class="dummy-grid-field">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" placeholder="000.000.000-00">
+                    </div>
+
+                    <div class="dummy-grid-field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="joao@email.com" required>
+                    </div>
+
+                    <div class="dummy-grid-field">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+                    </div>
+
+                </section>
+
+                <section class="info-card form-card">
+
+                    <h2>Dados da Reserva</h2>
+                    
+                    <div class="dummy-grid-field">
+                        <label for="veiculo">Veículo</label>
+                        <input type="text" id="veiculo" value="Aston Martin DB5" style="color: var(--brand-blue);">
+                    </div>
+
+                    <div class="dummy-grid-field">
+                        <label for="retirada-local">Local de Retirada</label>
+                        <input type="text" id="retirada-local">
+                    </div>
+
+                    <div class="dummy-grid-field">
+                        <label for="retirada-data">Data de Retirada</label>
+                        <input type="text" id="retirada-data" required>
+                    </div>
+
+                    <div class="dummy-grid-field">
+                        <label for="devolucao-data">Data de Devolução</label>
+                        <input type="text" id="devolucao-data" required>
+                    </div>
+
+                </section>
+                
+                <button type="submit" id="confirm-btn">CONFIRMAR RESERVA</button>
+
+            </form>
+
+            <div class="info-card">
+                <h2>RESUMO</h2>
+                <div class="car-image-container">
+                    <img class="car-img">
+                    <div class="car-name-overlay"></div>
+                </div>
+
+                <div class="auxiliar-flex"><span>Diária</span><span class="car-value"></span></div>
+
+
+                <div class="auxiliar-flex">
+                    <span>Dias</span>
+                    <input type="number" id="dias-aluguel" min="1" value="1">
+                </div>
+
+                <div class="auxiliar-flex">
+                    <span>Total</span>
+                    <strong class="calculo-carro emphasis-stronger blue-color"></strong>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+        <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+          </a>
+          <p>
+            A única plataforma de aluguel de veículos icônicos do entretenimento
+            mundial.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+            <a href="#" class="social-icon">TK</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="./catalogo.html">Catálogo</a></li>
+            <li><a href="#">Minhas Reservas</a></li>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Preços</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="./sobre.html">Sobre Nós</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Parceiros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul class="footer-contact-info">
+            <li><span>📞</span> +55 (11) 3456-7890</li>
+            <li><span>✉️</span> oi@carrinhos.com.br</li>
+            <li>
+              <span>📍</span> Av. Cinematográfica, 1985<br />Vila Ficção — São
+              Paulo, SP
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Carr(In)hos — Todos os direitos reservados.</p>
+        <p>Projeto educacional - Veículos fictícios</p>
+      </div>
+    </footer>
+
+</body>
+</html>

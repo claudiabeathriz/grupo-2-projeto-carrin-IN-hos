@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <script src="js/render.js" defer></script>
+    <script src="js/detalhes.js" defer></script>
+    <title></title>
+</head>
+<body>
+    <header>
+      <a href="./index.html" class="logo">
+        <!-- Ícone simulado por um elemento interno para estilização idêntica -->
+        <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Início</a></li>
+          <li><a href="./catalogo.html">Catálogo</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="./catalogo.html" class="btn-primary header-btn">
+        <span>☁️</span> Explorar
+      </a>
+    </header>
+
+    <main>
+        <nav>
+            <ol>
+                <li class="emphasis-weak"><a href="/">Início</a></li>
+                <li class="emphasis-weak"><a href="catalogo.html">Catálogo</a></li>
+                <li class="car-name blue-color"></li>
+            </ol>
+        </nav>
+
+        <article>
+            <img class="car-img main-img">
+
+            <div>
+                <hgroup>
+                    <h1 class="car-name emphasis-stronger"></h1>
+                    <p class="car-universe emphasis-weak"></p>
+                </hgroup>
+
+                <!-- 
+                    ?? não existe descrição no json mas no figma há ??
+                    <p class="holder-description"></p> 
+                -->
+                
+
+                <section class="info-card">
+
+                    <div>
+                        <p class="emphasis-weak">VALOR POR DIA</p>
+                        <span class="car-availability"></span>
+                    </div>
+
+                    <strong class="car-value blue-color emphasis-stronger"></strong>
+
+                </section>
+
+                <div id="reserve-btn-container">
+                    <button id="reserve-btn">Reservar Agora</button>
+
+                    <!--TODO: pegar imagem de agenda-->
+                    <button class="btn-agenda" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                        </svg>
+                        Ver Agenda
+                    </button>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <span class="logo-icon">🚗</span> Carr<span>{In}</span>hos
+          </a>
+          <p>
+            A única plataforma de aluguel de veículos icônicos do entretenimento
+            mundial.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+            <a href="#" class="social-icon">TK</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="./catalogo.html">Catálogo</a></li>
+            <li><a href="#">Minhas Reservas</a></li>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Preços</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="./sobre.html">Sobre Nós</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Parceiros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul class="footer-contact-info">
+            <li><span>📞</span> +55 (11) 3456-7890</li>
+            <li><span>✉️</span> oi@carrinhos.com.br</li>
+            <li>
+              <span>📍</span> Av. Cinematográfica, 1985<br />Vila Ficção — São
+              Paulo, SP
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Carr(In)hos — Todos os direitos reservados.</p>
+        <p>Projeto educacional - Veículos fictícios</p>
+      </div>
+    </footer>
+</body>
+</html>
