@@ -5,11 +5,29 @@ main {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0;
+    padding: 40px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header nav a {
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: var(--cor-titulo);
 }
 
 
-nav ol {
+.list-path-to {
     display: flex;
     list-style: none;
     padding: 0;
@@ -17,15 +35,19 @@ nav ol {
     gap: 8px;
 }
 
-nav li a {
+.path-to {
     color: inherit;
     text-decoration: none;
 }
 
-nav li + li::before {
+.path-to + .path-to::before {
     content: ">";
     color: var(--cor-texto);
     padding-right: 8px;
+}
+
+.path-to.blue-color {
+    color: var(--cor-primaria);
 }
 
 article {
@@ -157,7 +179,7 @@ hgroup p {
 
 #reserve-btn-container button.btn-agenda {
     background-color: #0e131f;
-    color: var(--cor-primaria-hover);
+    color: var(--cor-primaria);
     border: 1px solid var(--cor-primaria-hover);
     display: inline-flex;
     align-items: center;

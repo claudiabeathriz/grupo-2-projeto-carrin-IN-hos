@@ -13,17 +13,9 @@
     margin-bottom: 5px;
 }
 
-header {
-  max-width: 1200px;
-  width: 100%;
-}
-
-body {
+main {
     background-color: var(--bg-principal);
     color: var(--cor-titulo);
-}
-
-main {
     padding: 40px 8%;
 }
 
