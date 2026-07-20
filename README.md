@@ -1,4 +1,4 @@
-# Carr(In)hos
+# Carr{In}hos
 
 O **Carr{In}hos** é uma plataforma web de aluguel de veículos icônicos da cultura pop, desenvolvida durante o **Treinamento da IN Junior de 2026.2**.
 
