@@ -1,6 +1,6 @@
 # Carr(In)hos
 
-O **Carr(In)hos** é uma plataforma web de aluguel de veículos icônicos da cultura pop, desenvolvida durante o **Treinamento da IN Junior de 2026.2**.
+O **Carr{In}hos** é uma plataforma web de aluguel de veículos icônicos da cultura pop, desenvolvida durante o **Treinamento da IN Junior de 2026.2**.
 
 O projeto (Alugue um Carr{in}ho 26.2) tem como objetivo aplicar os conceitos fundamentais de desenvolvimento front-end, consumo de APIs e trabalho colaborativo utilizando Git e GitHub, por meio da construção de uma aplicação dinâmica.
 
